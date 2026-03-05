@@ -5,9 +5,9 @@ import Sidebar from '../components/Sidebar/Sidebar'
 
 function MainLayout() {
   return (
-      <div className='flex w-screen h-screen bg-gray-300'>
+      <div className='w-screen p-0 m-0 h-screen bg-gray-300'>
           <Navbar />
-          <Sidebar />
+          {/* <Sidebar /> */}
 
           <main>
               <Outlet />

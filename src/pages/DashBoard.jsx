@@ -2,7 +2,7 @@ import React from 'react'
 
 function DashBoard() {
   return (
-    <div>DashBoard</div>
+    <div className='block'>DashBoard</div>
   )
 }
 
