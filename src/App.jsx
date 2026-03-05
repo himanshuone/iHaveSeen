@@ -1,11 +1,9 @@
 import React from 'react'
+import AppRoute from './routes/AppRoute'
+
 
 function App() {
-  return (
-<>
-<div>Movie</div>
-</>
-  )
+  return <AppRoute />
 }
 
 export default App
