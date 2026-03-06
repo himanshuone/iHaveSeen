@@ -3,7 +3,7 @@ import React from 'react'
 function Login() {
     return (
         <>
-            <div className='w-screen h-screen flex'>
+            <div className='w-screen h-screen flex font-playfair'>
                 <div className='w-[43%] bg-[#1a1a1e] h-full p-15'>
                     <div>
                         <div className='text-white font-stretch-ultra-expanded text-3xl flex space-x-3.5 items-center '>
@@ -32,10 +32,21 @@ function Login() {
                     </div>
 
                 </div>
-                <div className='w-[57%] bg-gray-300  h-full justify-center flex items-center'> 
-                    <div className=' flex  bg-gray-100 h-fit border-0 rounded-xl w-full max-w-105 p-5 items-center justify-center'>
+                <div className='w-[57%] bg-gray-300  h-full justify-center flex items-center min-w-105'>
+                    <div className='bg-gray-100 h-fit border border-gray-300 rounded-xl w-full max-w-105 min-w-105 p-10 items-center justify-center shadow-black'>
 
-                        <div className='bg-gray-200 p-2 flex rounded-xl space-x-1 w-full justify-evenly'> <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl'>Sign In</div> <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl'>Create Account</div></div>
+                        <div className='bg-gray-200 p-1 flex rounded-xl space-x-1 w-full justify-evenly'> <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl'>Sign In</div> <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl'>Create Account</div></div>
+                        <div className='text-2xl mt-8  font-semibold'>Welcome back</div>
+                        <div className='mt-2' > <p className='font-sans text-gray-500 text-sm'>Sign in to your account</p></div>
+                        <div className='mt-4 font-sans'>
+                            <form onSubmit={() => console.log("Hello")}>
+                                <label htmlFor="Email">Email</label>
+                                <div className='border border-gray-500 rounded p-2 focus-within:border-pink-500 bg-gray-200'><input type="email" className='w-full h-full outline-0' />
+                                </div>
+                            </form>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
