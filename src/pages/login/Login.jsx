@@ -39,8 +39,8 @@ function Login() {
                     <div className='bg-gray-100 h-fit border border-gray-300 rounded-xl w-full max-w-105 min-w-105 p-10 items-center justify-center shadow-black'>
 
                         <div className='bg-gray-200 p-1 flex rounded-xl space-x-1 w-full justify-evenly'> 
-                            <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl' onClick={()=>setaccount(true)}>Sign In</div>
-                            <div className='bg-white items-center w-full p-2 flex justify-center rounded-xl' onClick={() => setaccount(false)}>Create Account</div>
+                            <div className={`${account ? "bg-white" :"bg-gray-200"}  items-center w-full p-2 flex justify-center rounded-xl`} onClick={()=>setaccount(true)}>Sign In</div>
+                            <div className={`${!account ? "bg-white" : "bg-gray-200"} items-center w-full p-2 flex justify-center rounded-xl`} onClick={() => setaccount(false)}>Create Account</div>
                              </div>
                         {account?<SignIn/>:<SignUp/>}
                         

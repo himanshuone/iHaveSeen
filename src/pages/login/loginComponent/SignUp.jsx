@@ -8,6 +8,11 @@ function SignUp() {
           <div className='mt-4 font-sans'>
               <form onSubmit={() => console.log("Hello")}>
                   <div>
+                      <label htmlFor="name">Full Name</label>
+                      <div className='border border-gray-300 rounded p-2 focus-within:border-pink-500 bg-gray-200'><input type="email" className='w-full h-full outline-0' />
+                      </div>
+                  </div>
+                  <div className='mt-4'>
                       <label htmlFor="Email">Email</label>
                       <div className='border border-gray-300 rounded p-2 focus-within:border-pink-500 bg-gray-200'><input type="email" className='w-full h-full outline-0' />
                       </div>
@@ -18,9 +23,15 @@ function SignUp() {
 
                       </div>
                           <div className='h-full ' onClick={() => console.log("Password Visible")}>👀</div>
-                      </div></div>
+                      </div>
+                      </div>
+                  <div className='mt-4'>
+                      <label htmlFor="password">Confirm Password</label>
+                      <div className='border border-gray-300 rounded p-2 focus-within:border-pink-500 bg-gray-200'><input type="Password" className='w-full h-full outline-0' />
+                      </div>
+                  </div>
                   <div className='text-sm font-light mt-2 w-full flex justify-end'>Forget Password?</div>
-                  <div className=' flex w-full border-0 bg-gray-300 p-2.5 rounded-xl items-center justify-center mt-2'>Sign In</div>
+                  <div className=' flex w-full border-0 bg-gray-300 p-2.5 rounded-xl items-center justify-center mt-2'>Create Account</div>
 
               </form>
               <div className='flex items-center text-xs mt-4'>
