@@ -12,9 +12,9 @@ function AppRoute() {
   return (
       <Routes>
           <Route element={<MainLayout />}>
-
               <Route path='/' element={<DashBoard/>} />
               <Route path='login' element={<Login/>} />
+              <Route path='MovieList' element={<MovieList/>} />
           </Route>
           <Route path='*' element={<NotValidRoute />} />
       </Routes>
