@@ -15,6 +15,7 @@ function AppRoute() {
               <Route path='/' element={<DashBoard/>} />
               <Route path='login' element={<Login/>} />
               <Route path='MovieList' element={<MovieList/>} />
+              <Route path='MovieDetail' element={<MovieDetail/>} />
           </Route>
           <Route path='*' element={<NotValidRoute />} />
       </Routes>
