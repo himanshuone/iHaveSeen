@@ -14,7 +14,7 @@ function AppRoute() {
           <Route element={<MainLayout />}>
               <Route path='/' element={<DashBoard/>} />
               <Route path='login' element={<Login/>} />     
-                <Route path='addmovie' element={<Addmovie/>} />
+                <Route path='addmovie' element={<AddMovie/>} />
         
               <Route path='MovieList' element={<MovieList/>} />
               <Route path='MovieDetail' element={<MovieDetail/>} />
