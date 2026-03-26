@@ -5,6 +5,9 @@ import { Route, Routes } from 'react-router-dom'
 import Sidebar from '../components/Sidebar/Sidebar'
 import DashBoard from '../Pages/DashBoard'
 import Login from '../pages/login/Login'
+import AddMovie from '../pages/AddMovie'
+import MovieDetail from '../pages/MovieDetail'
+import MovieList from '../pages/MovieList'
 
 
 
