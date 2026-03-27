@@ -3,9 +3,9 @@ import React from 'react'
 function Navbar() {
   return (
     <>
-      <div className='p-5 flex  w-full justify-between'>
+      <div className='flex w-full h-[10%] justify-between bg-pink-300'>
 
-        <div>Logo</div>
+        <div>iHaveSeen</div>
         <div className='flex '>
 
           <ul className='list-none flex space-x-2.5'>
