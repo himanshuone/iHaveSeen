@@ -6,15 +6,24 @@ import background from "../assets/flowerbackground.jpg";
 function MainLayout() {
   return (
     <>
-    <div>
+    
         <div
-      className="flex w-screen h-screen bg-cover   bg-[center_top_75%]  bg-no-repeat blur-3xl"
+      className="absolute flex w-screen h-screen bg-cover   bg-[right_top_35%]  bg-no-repeat blur-3xl"
       style={{ backgroundImage: `url(${background})` }}
     >
 
     </div>
-    <h1 className="font-montserrat text-3xl font-bold">Karecare Wellness</h1>
-    </div>
+<div className="relative flex flex-col justify-between w-screen px-4 text-gray-600 text-shadow-2xs font-medium       lg:flex xl:flex-row sm:flex-col ">
+<div>
+        <h1 className=" font-[montserrat]  pt-4">Karecare Wellness</h1>
+</div>     
+<div className="flex">
+        <h1 className="font-[montserrat]  pt-4">Approach</h1>
+        <h1 className="font-[montserrat]  px-4 pt-4">Get Connected</h1>
+
+  </div> 
+</div> 
+  
     </>
   );
 }
