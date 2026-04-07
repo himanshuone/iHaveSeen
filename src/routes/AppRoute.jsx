@@ -2,12 +2,13 @@ import React from 'react'
 import NotValidRoute from '../pages/NotValidRoute'
 import MainLayout from '../layouts/MainLayout'
 import { Route, Routes } from 'react-router-dom'
-import Sidebar from '../components/Sidebar/Sidebar'
-import DashBoard from '../pages/DashBoard'
+
+
 import Login from '../pages/login/Login'
-import AddMovie from '../pages/AddMovie'
+import Curate from '../pages/Curate'
 import MovieDetail from '../pages/MovieDetail'
 import MovieList from '../pages/MovieList'
+import LandingPage from '../pages/LandingPage'
 
 
 
@@ -15,9 +16,9 @@ function AppRoute() {
   return (
       <Routes>
           <Route element={<MainLayout />}>
-              <Route path='/' element={<DashBoard/>} />
+              <Route path='/' element={<LandingPage/>} />
               <Route path='login' element={<Login/>} />     
-                <Route path='/addmovie' element={<AddMovie/>} />
+                <Route path='/curate' element={<Curate/>} />
         
               <Route path='/movieList' element={<MovieList/>} />
               <Route path='/movieDetail' element={<MovieDetail/>} />
