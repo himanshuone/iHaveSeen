@@ -30,21 +30,31 @@ function Curate() {
           </div>
         </div>
       </div>
-{/* Second div startss here */}
-      <div className="relative w-screen h-[80vh] border-0  overflow-hidden">
+
+      <div className="relative w-screen h-[130vh] border-0  overflow-hidden">
         <div
           className="absolute w-full h-full bg-no-repeat bg-cover blur-2xl"
           style={{ backgroundImage: `url(${background3})` }}
         ></div>
-
-        <div className="relative flex w-full justify-center mt-20 ">
-          <div className="flex items-center border-1 w-39 h-39 bg-auto rounded-2xl overflow-hidden">
-            <img
-              src={background3}
-              alt=""
-              className=" w-full h-full object-cover scale-100 "
-            />{" "}
+        <div className="relative w-screen h-[130vh] flex flex-col items-center ">
+          <div className="section1  py-20  h-1/3 w-full px-[10vw]">
+            <div className="number and title flex flex-col w-full items-center font-['Instrument_Serif'] tracking-tight gap-6">
+              <h1 className="text-4xl  text-gray-500">01</h1>
+              <h1 className="text-6xl">Memory Preservation</h1>
+            </div>
+            <div className="number and title flex flex-col w-full h-1/3 items-center text-xs tracking-tight ">
+              <div className="items-center flex py-10 w-full  gap-10 ">
+                <div className="w-1/3 h-10 flex justify-center items-center">Virtual Session</div>
+                <div className="w-1/3 h-10 flex justify-center items-center border-x-1 ">Virtual Session</div>
+                <div className="w-1/3 h-10 flex justify-center items-center">Virtual Session</div>
+              
+              </div>
+            </div>
           </div>
+
+
+
+
         </div>
       </div>
     </div>
